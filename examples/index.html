@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vue组件库测试</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/http-vue-loader"></script>
+</head>
+<body>
+  <div id="app">
+    <el-button></el-button>
+  </div>
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data: {},
+      components: {
+        'ElButton': httpVueLoader('../packages/button/src/button.vue')
+      }
+    })
+  </script>
+</body>
+</html>

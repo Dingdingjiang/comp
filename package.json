@@ -1,0 +1,24 @@
+{
+  "name": "comp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/ele.common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config build/webpack.common.js",
+    "build": "webpack --config build/webpack.common.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vue-loader": "^15.11.1",
+    "vue-template-compiler": "^2.7.16",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "vue": "^2.7.16"
+  }
+}
