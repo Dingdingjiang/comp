@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config build/webpack.common.js",
     "build": "webpack --config build/webpack.common.js",
-    "build:theme": "gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk"
+    "build:theme": "gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
+    "gen": "node build/bin/gen-cssfile.js",
+    "new": "node build/bin/new.js"
   },
   "keywords": [],
   "author": "",

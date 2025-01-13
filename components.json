@@ -1,0 +1,6 @@
+{
+  "button": "./packages/button/index.js",
+  "divider": "./packages/divider/index.js",
+  "loading": "./packages/loading/index.js",
+  "alert": "./packages/alert/index.js"
+}
