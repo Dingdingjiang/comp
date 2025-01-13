@@ -1,5 +1,5 @@
 <template>
-  <div>第一个my...按钮组件</div>
+  <div class="my-button">第一个my...按钮组件</div>
 </template>
 
 <script>

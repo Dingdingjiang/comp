@@ -6,12 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config build/webpack.common.js",
-    "build": "webpack --config build/webpack.common.js"
+    "build": "webpack --config build/webpack.common.js",
+    "build:theme": "gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cp-cli": "^2.0.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^6.0.0",
     "vue-loader": "^15.11.1",
     "vue-template-compiler": "^2.7.16",
     "webpack": "^5.97.1",
@@ -19,6 +25,9 @@
     "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "sass": "^1.83.1",
+    "tslib": "^2.8.1",
     "vue": "^2.7.16"
   }
 }
