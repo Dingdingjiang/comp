@@ -9,7 +9,8 @@
     "build": "webpack --config build/webpack.common.js",
     "build:theme": "gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
     "gen": "node build/bin/gen-cssfile.js",
-    "new": "node build/bin/new.js"
+    "new": "node build/bin/new.js",
+    "build:entry": "node build/bin/build-entry.js"
   },
   "keywords": [],
   "author": "",
@@ -27,9 +28,12 @@
     "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
+    "file-save": "^0.2.0",
     "gulp-clean-css": "^4.3.0",
+    "json-templater": "^1.2.0",
     "sass": "^1.83.1",
     "tslib": "^2.8.1",
+    "uppercamelcase": "^3.0.0",
     "vue": "^2.7.16"
   }
 }

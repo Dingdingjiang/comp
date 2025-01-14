@@ -1,6 +1,7 @@
 import Button from '../packages/button/index.js'
+import Divider from '../packages/divider/index.js'
 
-const components = [Button]
+const components = [Button, Divider]
 
 const install = (Vue) => {
     components.forEach(component => {
@@ -10,5 +11,6 @@ const install = (Vue) => {
 
 export default {
     install,
-    Button
+    Button,
+    Divider
 }
